@@ -45,7 +45,7 @@ class Hero(Character):
         return self.__power
     
     def get_details(self):
-        return f"{super().get_details()} \nPower: {self.get_power}"
+        return f"{super().get_details()} \nPower: {self.get_power()}"
     
     def special_attack(self, target):
         level = self.get_level()
@@ -69,5 +69,5 @@ class Enemy(Character):
         return self.__type
     
     def get_details(self):
-        return f"{super().get_details()} \nType: {self.get_type}"
+        return f"{super().get_details()} \nType: {self.get_type()}"
     
