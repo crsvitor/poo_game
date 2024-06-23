@@ -16,7 +16,7 @@ class Character:
         return self.__level
     
     def get_details(self):
-        return f"Name: {self.get_name()} \n Life: {self.get_life()} \n Level: {self.get_level()}"
+        return f"Name: {self.get_name()} \nLife: {self.get_life()} \nLevel: {self.get_level()}"
     
     def get_attacked(self, damage):
         self.__life -= damage
